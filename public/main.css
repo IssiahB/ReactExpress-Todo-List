@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --soft-color: #f8efea;
+    --bright-color: #ded369;
+    --dark-color: #192f01;
+    --contrast-color: #e0475b;
+    --background-color: #f2ebe5;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    padding: 0 5vw;
+}
+
+nav {
+    height: 70px;
+    background-color: var(--bright-color);
+    border: 1px var(--dark-color) solid;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 5%;
+}
+
+nav h2 {
+    float: left;
+    position: relative;
+    top: 5px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 40px;
+    padding: 0 15px 0 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5%;
+}
+
+nav ul {
+    position: relative;
+    top: 25px;
+    float: right;
+    width: 30%;
+    list-style-type: none;
+    min-width: 240px;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 5%;
+    border-right: 2px solid black;
+}
+
+nav ul li:last-of-type {
+    margin: 0;
+    padding: 0 0 0 5%;
+    border: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.content header h1 {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: xx-large;
+    letter-spacing: .1em;
+    color: var(--contrast-color);
+}
+
+.content header p {
+    color: red;
+}
+
+main {
+    margin-top: 20px;
+    border: 1px var(--dark-color) solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--contrast-color);
+}
+
+button:active {
+    background-color: rgb(204, 51, 71);
+}

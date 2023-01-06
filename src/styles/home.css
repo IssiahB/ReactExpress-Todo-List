@@ -1,0 +1,25 @@
+.task-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    min-height: 40vh;
+    overflow: visible;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--bright-color);
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--contrast-color);
+    border-top: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+}
+
+.task-item:hover {
+    background-color: rgb(202, 191, 85);
+}
